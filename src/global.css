@@ -1,12 +1,66 @@
 @import "tailwindcss";
 
 html body {
-    width: 100vw;
-    background-color: black;
-    color: white;
+  width: 100vw;
+  background-color: black;
+  color: white;
 }
 
 @theme {
-    --color-white-50: #d9ecff;
-    
+  --color-white-50: #d9ecff;
+}
+
+.slide {
+  display: inline;
+  flex-direction: column;
+  transition: cubic-bezier(0.071, 0.03, 0.34, 1);
+  -webkit-transition: cubic-bezier(0.071, 0.03, 0.34, 1);
+  -moz-transition: cubic-bezier(0.071, 0.03, 0.34, 1);
+  -ms-transition: cubic-bezier(0.071, 0.03, 0.34, 1);
+  -o-transition: cubic-bezier(0.071, 0.03, 0.34, 1);
+}
+
+.wrapper {
+  display: inline;
+  flex-direction: column;
+  animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 99);
+  -webkit-animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 99);
+}
+
+@keyframes wordSlider {
+  0% {
+    transform: translateY(0.5%);
+    -webkit-transform: translateY(0.5%);
+    -moz-transform: translateY(0.5%);
+    -ms-transform: translateY(0.5%);
+    -o-transform: translateY(0.5%);
+  }
+  12.5% {
+    transform: translateY(12.5%);
+    -webkit-transform: translateY(12.5%);
+    -moz-transform: translateY(12.5%);
+    -ms-transform: translateY(12.5%);
+    -o-transform: translateY(12.5%);
+}
+  25% {
+    transform: translateY(25%);
+    -webkit-transform: translateY(25%);
+    -moz-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    -o-transform: translateY(25%);
+}
+  37.5% {
+    transform: translateY(37.5%);
+    -webkit-transform: translateY(37.5%);
+    -moz-transform: translateY(37.5%);
+    -ms-transform: translateY(37.5%);
+    -o-transform: translateY(37.5%);
+}
+  50% {
+    transform: translateY(50%);
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+}
 }

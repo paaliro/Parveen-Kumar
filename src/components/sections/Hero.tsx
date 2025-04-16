@@ -1,8 +1,9 @@
 const words = [
     { text: 'ideas', imgPath: '/images/ideas.svg' },
-    { text: 'Concepts', imgPath: '/images/concepts.svg' }
+    { text: 'Concepts', imgPath: '/images/concepts.svg' },
+    { text: 'Designs', imgPath: '/images/designs.svg' },
+    { text: 'Code', imgPath: '/images/code.svg' }
 ]
-
 
 function Hero() {
     return (
@@ -16,7 +17,19 @@ function Hero() {
                 <header className="flex flex-col justify-center md:w-full w-screen">
                     <div className="flex flex-col gap-7">
                         <div className="hero-text text-4xl">
-                            <h1>Shapping</h1>
+                            <div className="flex gap-2">
+                                <h1>Shapping</h1>
+                                <span className="slide">
+                                    <span className="wrapper flex flex-col gap-2 m-1">
+                                        {words.map((word, index) => (
+                                            <span key={index} className="flex gap-2">
+                                                <img src={word.imgPath} alt={word.text} className="bg-white-50 rounded-full p-2" />
+                                                <span>{word.text}</span>
+                                            </span>
+                                        ))}
+                                    </span>
+                                </span>
+                            </div>
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
                         </div>
