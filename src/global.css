@@ -41,26 +41,26 @@ html body {
     -moz-transform: translateY(12.5%);
     -ms-transform: translateY(12.5%);
     -o-transform: translateY(12.5%);
-}
+  }
   25% {
     transform: translateY(25%);
     -webkit-transform: translateY(25%);
     -moz-transform: translateY(25%);
     -ms-transform: translateY(25%);
     -o-transform: translateY(25%);
-}
+  }
   37.5% {
     transform: translateY(37.5%);
     -webkit-transform: translateY(37.5%);
     -moz-transform: translateY(37.5%);
     -ms-transform: translateY(37.5%);
     -o-transform: translateY(37.5%);
-}
+  }
   50% {
     transform: translateY(50%);
     -webkit-transform: translateY(50%);
     -moz-transform: translateY(50%);
     -ms-transform: translateY(50%);
     -o-transform: translateY(50%);
-}
+  }
 }
