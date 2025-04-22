@@ -8,22 +8,21 @@ const words = [
 function Hero() {
     return (
         <section id="Hero" className="relative overflow-hidden">
-            <div className="absolute top-0 left-0 z-10 ">
+            <div className="absolute top-0 left-0 z-10 w-screen">
                 <img src="/images/bg.png" alt="background" />
             </div>
 
             <div className="hero-layout">
                 {/* Left : Hero Content */}
                 <header className="flex flex-col justify-center sm:w-full w-screen">
-                    <div className="flex flex-col">
-                        <div className="hero-text text-2xl sm:text-4xl text-center">
-                            <div className="flex justify-center items-center">
+                        <div className="flex flex-col hero-text text-2xl sm:text-4xl text-start sm:text-center ml-4 mt-6 sm:mt-10">
+                            <div className="flex sm:justify-center items-center">
                                 <h1>Shapping</h1>
                                 <div className="slide h-[46px] overflow-hidden">
                                     <div className="wrapper flex flex-col animate-slide">
                                         {words.map((word, index) => (
                                             <div key={index} className="flex items-center gap-1 p-2 h-[60px]">
-                                                <img src={word.imgPath} alt={word.text} className="w-6 h-6 bg-white rounded-full p-1" />
+                                                <img src={word.imgPath} alt={word.text} className="w-7 sm:w-8 h-7 sm:h-8 bg-white rounded-full p-1" />
                                                 <span>{word.text}</span>
                                             </div>
                                         ))}
@@ -36,7 +35,6 @@ function Hero() {
                                 Hi, i'm Parveen, a developer based in india with a passion for code.
                             </p>
                         </div>
-                    </div>
                 </header>
                 {/* Right : 3d Model */}
             </div>
