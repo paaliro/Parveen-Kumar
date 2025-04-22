@@ -20,7 +20,7 @@ function Hero() {
                 {/* Left : Hero Content */}
                 <header className="flex flex-col justify-center md:w-full w-screen">
                     <div className="flex flex-col">
-                        <div className="hero-text text-4xl text-center">
+                        <div className="hero-text text-2xl sm:text-4xl text-center">
                             <div className="flex justify-center items-center gap-0">
                                 <h1>Shapping</h1>
                                 <div className="slide h-[60px] overflow-hidden">
