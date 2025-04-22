@@ -2,33 +2,37 @@ const words = [
     { text: 'ideas', imgPath: '/images/ideas.svg' },
     { text: 'Concepts', imgPath: '/images/concepts.svg' },
     { text: 'Designs', imgPath: '/images/designs.svg' },
+    { text: 'Code', imgPath: '/images/code.svg' },
+    { text: 'ideas', imgPath: '/images/ideas.svg' },
+    { text: 'Concepts', imgPath: '/images/concepts.svg' },
+    { text: 'Designs', imgPath: '/images/designs.svg' },
     { text: 'Code', imgPath: '/images/code.svg' }
 ]
 
 function Hero() {
     return (
         <section id="Hero" className="relative overflow-hidden">
-            <div className="absolute top-0 left-0 z-10">
+            <div className="absolute top-0 left-0 z-10 ">
                 <img src="/images/bg.png" alt="background" />
             </div>
 
             <div className="hero-layout">
                 {/* Left : Hero Content */}
                 <header className="flex flex-col justify-center md:w-full w-screen">
-                    <div className="flex flex-col gap-7">
-                        <div className="hero-text text-4xl">
-                            <div className="flex gap-2">
+                    <div className="flex flex-col">
+                        <div className="hero-text text-4xl text-center">
+                            <div className="flex justify-center items-center gap-0">
                                 <h1>Shapping</h1>
-                                <span className="slide">
-                                    <span className="wrapper flex flex-col gap-2 m-1">
+                                <div className="slide h-[60px] overflow-hidden">
+                                    <div className="wrapper flex flex-col animate-slide">
                                         {words.map((word, index) => (
-                                            <span key={index} className="flex gap-2">
-                                                <img src={word.imgPath} alt={word.text} className="bg-white-50 rounded-full p-2" />
+                                            <div key={index} className="flex items-center gap-1 p-2 h-[60px]">
+                                                <img src={word.imgPath} alt={word.text} className="w-7 h-7 bg-white rounded-full p-1" />
                                                 <span>{word.text}</span>
-                                            </span>
+                                            </div>
                                         ))}
-                                    </span>
-                                </span>
+                                    </div>
+                                </div>
                             </div>
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
