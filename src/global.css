@@ -27,34 +27,6 @@ html body {
   -webkit-animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 99);
 }
 
-/* @keyframes slide {
-  0% {
-    transform: translateY(0%);
-  }
-  16.66% {
-    transform: translateY(-100%);
-  }
-  33.33% {
-    transform: translateY(-200%);
-  }
-  50% {
-    transform: translateY(-300%);
-  }
-  66.66% {
-    transform: translateY(-200%);
-  }
-  83.33% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-.animate-slide {
-  animation: slide 14s linear infinite;
-} */
-
 @keyframes slideWords {
   0% {
     transform: translateY(0);

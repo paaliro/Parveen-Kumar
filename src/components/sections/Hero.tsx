@@ -3,10 +3,6 @@ const words = [
     { text: 'Concepts', imgPath: '/images/concepts.svg' },
     { text: 'Designs', imgPath: '/images/designs.svg' },
     { text: 'Code', imgPath: '/images/code.svg' },
-    { text: 'ideas', imgPath: '/images/ideas.svg' },
-    { text: 'Concepts', imgPath: '/images/concepts.svg' },
-    { text: 'Designs', imgPath: '/images/designs.svg' },
-    { text: 'Code', imgPath: '/images/code.svg' }
 ]
 
 function Hero() {
@@ -18,16 +14,16 @@ function Hero() {
 
             <div className="hero-layout">
                 {/* Left : Hero Content */}
-                <header className="flex flex-col justify-center md:w-full w-screen">
+                <header className="flex flex-col justify-center sm:w-full w-screen">
                     <div className="flex flex-col">
                         <div className="hero-text text-2xl sm:text-4xl text-center">
-                            <div className="flex justify-center items-center gap-0">
+                            <div className="flex justify-center items-center">
                                 <h1>Shapping</h1>
-                                <div className="slide h-[60px] overflow-hidden">
+                                <div className="slide h-[46px] overflow-hidden">
                                     <div className="wrapper flex flex-col animate-slide">
                                         {words.map((word, index) => (
                                             <div key={index} className="flex items-center gap-1 p-2 h-[60px]">
-                                                <img src={word.imgPath} alt={word.text} className="w-7 h-7 bg-white rounded-full p-1" />
+                                                <img src={word.imgPath} alt={word.text} className="w-6 h-6 bg-white rounded-full p-1" />
                                                 <span>{word.text}</span>
                                             </div>
                                         ))}
@@ -36,6 +32,9 @@ function Hero() {
                             </div>
                             <h1>into Real Projects</h1>
                             <h1>that Deliver Results</h1>
+                            <p className="text-white-50 text-sm sm:text-xl mt-5">
+                                Hi, i'm Parveen, a developer based in india with a passion for code.
+                            </p>
                         </div>
                     </div>
                 </header>
