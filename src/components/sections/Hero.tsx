@@ -1,3 +1,5 @@
+import Button from "../Button"
+
 const words = [
     { text: 'ideas', imgPath: '/images/ideas.svg' },
     { text: 'Concepts', imgPath: '/images/concepts.svg' },
@@ -14,27 +16,28 @@ function Hero() {
 
             <div className="hero-layout">
                 {/* Left : Hero Content */}
-                <header className="flex flex-col justify-center sm:w-full w-screen">
-                        <div className="flex flex-col hero-text text-2xl sm:text-4xl text-start sm:text-center ml-4 mt-20 sm:mt-15">
-                            <div className="flex sm:justify-center items-center">
-                                <h1>Shapping</h1>
-                                <div className="slide h-[46px] overflow-hidden">
-                                    <div className="wrapper flex flex-col animate-slide">
-                                        {words.map((word, index) => (
-                                            <div key={index} className="flex items-center gap-1 pl-2 pb-2 h-[60px]">
-                                                <img src={word.imgPath} alt={word.text} className="w-7 sm:w-8 h-7 sm:h-8 bg-white rounded-full p-1" />
-                                                <span>{word.text}</span>
-                                            </div>
-                                        ))}
-                                    </div>
+                <header className="flex flex-col justify-center w-screen">
+                    <div className="flex flex-col hero-text text-2xl sm:text-5xl text-start ml-4 mt-20 sm:mt-45 w-fit">
+                        <div className="flex justify-start items-center">
+                            <h1>Shapping</h1>
+                            <div className="slide h-[46px] overflow-hidden">
+                                <div className="wrapper flex flex-col animate-slide">
+                                    {words.map((word, index) => (
+                                        <div key={index} className="flex items-center gap-1 pl-2 pb-2 h-[60px]">
+                                            <img src={word.imgPath} alt={word.text} className="w-7 sm:w-10 h-7 sm:h-10 bg-white rounded-full p-1" />
+                                            <span>{word.text}</span>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
-                            <h1>into Real Projects</h1>
-                            <h1>that Deliver Results</h1>
-                            <p className="text-white-50 text-sm sm:text-xl mt-5">
-                                Hi, i'm Parveen, a developer based in india with a passion for code.
-                            </p>
                         </div>
+                        <h1 className="sm:mt-2">into Real Projects</h1>
+                        <h1>that Deliver Results</h1>
+                        <p className="text-white-50 text-sm sm:text-2xl mt-5">
+                            Hi, i'm <b>Parveen</b>, a developer based in india with a passion for code.
+                        </p>
+                        <Button />
+                    </div>
                 </header>
                 {/* Right : 3d Model */}
             </div>
