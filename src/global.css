@@ -150,7 +150,7 @@ html body {
 }
 /* See My Work Button */
 
-@media (max-width: 676px) {
+@media (max-width: 640px) {
   .animated-button {
     padding: 8px 36px;
     font-size: 14px;

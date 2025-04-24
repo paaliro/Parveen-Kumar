@@ -17,7 +17,7 @@ function Hero() {
             <div className="hero-layout">
                 {/* Left : Hero Content */}
                 <header className="flex flex-col justify-center w-screen">
-                    <div className="flex flex-col hero-text text-2xl sm:text-5xl text-start ml-4 mt-20 sm:mt-45 w-fit">
+                    <div className="flex flex-col hero-text text-2xl sm:text-5xl font-bold text-start ml-5 mt-20 sm:mt-65 w-fit">
                         <div className="flex justify-start items-center">
                             <h1>Shapping</h1>
                             <div className="slide h-[46px] overflow-hidden">
@@ -33,7 +33,7 @@ function Hero() {
                         </div>
                         <h1 className="sm:mt-2">into Real Projects</h1>
                         <h1>that Deliver Results</h1>
-                        <p className="text-white-50 text-sm sm:text-2xl mt-5">
+                        <p className="text-white-50 text-sm sm:text-lg mt-5 font-normal">
                             Hi, i'm <b>Parveen</b>, a developer based in india with a passion for code.
                         </p>
                         <Button />
