@@ -40,6 +40,9 @@ function Hero() {
                     </div>
                 </header>
                 {/* Right : 3d Model */}
+                <div>
+                    
+                </div>
             </div>
         </section>
     )
