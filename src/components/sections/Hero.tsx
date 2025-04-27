@@ -36,7 +36,7 @@ function Hero() {
                         <p className="text-white-50 text-sm sm:text-lg mt-5 font-normal">
                             Hi, i'm <b>Parveen</b>, a developer based in india with a passion for code.
                         </p>
-                        <Button />
+                         <Button />
                     </div>
                 </header>
                 {/* Right : 3d Model */}
