@@ -148,7 +148,11 @@ html body {
   height: 220px;
   opacity: 1;
 }
-/* See My Work Button */
+/* ------------- See My Work Button ------------- */
+
+.hero-3d-layout {
+  @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+}
 
 @media (max-width: 640px) {
   .animated-button {
