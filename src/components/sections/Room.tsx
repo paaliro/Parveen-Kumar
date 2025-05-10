@@ -49,7 +49,7 @@ export function Room(props: GroupProps): JSX.Element {
       <mesh geometry={nodes.vires_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.window_blinn1_0.geometry} material={materials.blinn1} />
       <mesh geometry={nodes.window4_phong1_0.geometry} material={materials.phong1} />
-    </group> 
+    </group>  
   )
 }
 
