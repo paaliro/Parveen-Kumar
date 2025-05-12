@@ -22,7 +22,7 @@ type GLTFResult = GLTF & {
 
 // interface RoomProps extends GroupProps {}
 
-export const Room: React.FC<RoomProps> = (props) => {
+export const Room: React.FC = (props) => {
   const gltf = useGLTF("/models/optimized-room.glb") as unknown as GLTFResult;
   const { nodes, materials } = gltf;
   const screensRef = useRef<THREE.Mesh>(null);
@@ -92,3 +92,4 @@ export const Room: React.FC<RoomProps> = (props) => {
 };
 
 useGLTF.preload("/models/optimized-room.glb");
+
