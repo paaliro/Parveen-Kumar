@@ -1,6 +1,6 @@
 import AnimationWords from "../AnimationWords"
 import Button from "../Button"
-import HeroExperience from "../HeroExperience"
+import HeroExperience from "../HeroModels/HeroExperience"
 
 function Hero() {
     return (
@@ -26,8 +26,8 @@ function Hero() {
                 </header>
             </section>
             {/* Right : 3d Model */}
-            <figure className="hero-3d-layout border-red-200 border-2">
-                <div>
+            <figure>
+                <div className="hero-3d-layout">
                     <HeroExperience />
                 </div>
             </figure>
