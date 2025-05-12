@@ -1,8 +1,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
-import * as THREE from "three";
-// import { Points, BufferGeometry, Float32BufferAttribute } from "three";
-// import { MeshProps } from "@react-three/fiber";
+import * as THREE from "three"; // Ensure THREE is imported
+import { BufferAttribute } from "three"; // Make sure BufferAttribute is imported correctly
 
 interface Particle {
   position: [number, number, number];
@@ -16,6 +15,7 @@ interface ParticlesProps {
 const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
   const mesh = useRef<THREE.Points>(null);
 
+  // Create particle data using useMemo
   const particles: Particle[] = useMemo(() => {
     const temp: Particle[] = [];
     for (let i = 0; i < count; i++) {
@@ -31,20 +31,22 @@ const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
     return temp;
   }, [count]);
 
+  // Update particle positions in useFrame
   useFrame(() => {
     const currentMesh = mesh.current;
     if (!currentMesh) return;
 
-    const positions = (currentMesh.geometry.attributes.position as THREE.BufferAttribute).array as Float32Array;
+    const positions = (currentMesh.geometry.attributes.position as BufferAttribute).array as Float32Array;
     for (let i = 0; i < count; i++) {
       let y = positions[i * 3 + 1];
       y -= particles[i].speed;
       if (y < -2) y = Math.random() * 10 + 5;
       positions[i * 3 + 1] = y;
     }
-    (currentMesh.geometry.attributes.position as THREE.BufferAttribute).needsUpdate = true;
+    (currentMesh.geometry.attributes.position as BufferAttribute).needsUpdate = true;
   });
 
+  // Create positions array from particle data
   const positions = useMemo(() => {
     const arr = new Float32Array(count * 3);
     particles.forEach((p, i) => {

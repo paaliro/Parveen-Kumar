@@ -5,10 +5,10 @@ Command: npx gltfjsx@6.5.3 optimized-room.glb
 
 import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
+// import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
+// import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
-import { GroupProps } from '@react-three/fiber';
+// import { GroupProps } from '@react-three/fiber';
 import { GLTF } from "three-stdlib";
 
 type GLTFResult = GLTF & {
@@ -20,13 +20,11 @@ type GLTFResult = GLTF & {
   };
 };
 
-interface RoomProps extends GroupProps { }
+// interface RoomProps extends GroupProps {}
 
 export const Room: React.FC<RoomProps> = (props) => {
-  // const { nodes, materials } = useGLTF("/models/optimized-room.glb") as GLTFResult;
   const gltf = useGLTF("/models/optimized-room.glb") as unknown as GLTFResult;
   const { nodes, materials } = gltf;
-
   const screensRef = useRef<THREE.Mesh>(null);
 
   const matcapTexture = useTexture("/images/textures/mat1.png");
@@ -34,14 +32,12 @@ export const Room: React.FC<RoomProps> = (props) => {
   const curtainMaterial = new THREE.MeshPhongMaterial({ color: "#d90429" });
   const bodyMaterial = new THREE.MeshPhongMaterial({ map: matcapTexture });
   const tableMaterial = new THREE.MeshPhongMaterial({ color: "#582f0e" });
-  // const radiatorMaterial = new THREE.MeshPhongMaterial({ color: "#fff" });
   const compMaterial = new THREE.MeshStandardMaterial({ color: "#fff" });
-  // const pillowMaterial = new THREE.MeshPhongMaterial({ color: "#8338ec" });
   const chairMaterial = new THREE.MeshPhongMaterial({ color: "#000" });
 
   return (
     <group {...props} dispose={null}>
-      <EffectComposer>
+      {/* <EffectComposer>
         <SelectiveBloom
           selection={screensRef}
           intensity={1.5}
@@ -49,7 +45,7 @@ export const Room: React.FC<RoomProps> = (props) => {
           luminanceSmoothing={0.9}
           blendFunction={BlendFunction.ADD}
         />
-      </EffectComposer>
+      </EffectComposer> */}
 
       {/* Example typed usage of meshes */}
       <mesh
