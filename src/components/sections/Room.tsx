@@ -53,4 +53,4 @@ export function Room(props: GroupProps): JSX.Element {
   )
 }
 
-useGLTF.preload('/models/optimized-room.glb')
+useGLTF.preload('/models/optimized-room.glb') 
