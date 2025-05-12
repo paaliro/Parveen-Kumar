@@ -1,8 +1,8 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
-import { Points, BufferGeometry, Float32BufferAttribute } from "three";
-import { MeshProps } from "@react-three/fiber";
+// import { Points, BufferGeometry, Float32BufferAttribute } from "three";
+// import { MeshProps } from "@react-three/fiber";
 
 interface Particle {
   position: [number, number, number];
