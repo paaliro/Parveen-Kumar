@@ -61,6 +61,7 @@ const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
     <points ref={mesh}>
       <bufferGeometry>
         <bufferAttribute
+          args={[positions, 3]}
           attach="attributes-position"
           count={count}
           array={positions}
