@@ -18,7 +18,7 @@ function Hero() {
                         </div>
                         <h1 className="sm:mt-2 z-99">into Real Projects</h1>
                         <h1 className="z-99">that Deliver Results</h1>
-                        <p className="text-white-50 text-sm sm:text-lg mt-5 font-normal z-99">
+                        <p className="text-white-50 text-sm sm:text-lg mt-5 mx-2 font-normal z-99">
                             Hi, i'm <b>Parveen</b>, a developer based in india with a passion for code.
                         </p>
                         <Button />
