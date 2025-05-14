@@ -11,7 +11,7 @@ function Hero() {
                 </div>
                 {/* Left : Hero Content */}
                 <header className="flex flex-col justify-center w-screen">
-                    <div className="flex flex-col hero-text text-2xl sm:text-5xl font-semibold text-start sm:ml-25 mt-20 sm:mt-65 w-fit">
+                    <div className="flex flex-col hero-text text-2xl sm:text-5xl ml-7 font-semibold text-start sm:ml-25 mt-20 sm:mt-65 w-fit">
                         <div className="flex justify-start items-center z-99">
                             <h1>Shapping</h1>
                             <AnimationWords />
