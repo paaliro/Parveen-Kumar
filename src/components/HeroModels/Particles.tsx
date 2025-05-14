@@ -12,7 +12,7 @@ interface ParticlesProps {
   count?: number;
 }
 
-const Particles: React.FC<ParticlesProps> = ({ count = 200 }) => {
+const Particles: React.FC<ParticlesProps> = ({ count = 300 }) => {
   const mesh = useRef<THREE.Points>(null);
 
   // Create particle data using useMemo
