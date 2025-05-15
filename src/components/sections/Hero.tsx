@@ -1,11 +1,12 @@
 import AnimationWords from "../AnimationWords";
 import Button from "../Button";
+import Cards from "../Cards";
 import HeroExperience from "../HeroModels/HeroExperience";
 import MotionH1 from './MotionH1';
 
 function Hero() {
     return (
-        <div className="">
+        <div className="vw-100">
             <section id="Hero" className="relative overflow-hidden w-30%">
                 <div className="absolute top-0 left-0 z-10 w-screen">
                     <img src="/images/bg.png" alt="background" />
@@ -28,13 +29,12 @@ function Hero() {
             </section>
 
             {/* Right : 3D Model */}
-            <div>
-                <figure>
-                    <div className="hero-3d-layout">
-                        <HeroExperience />
-                    </div>
-                </figure>
-            </div>
+            <figure>
+                <div className="hero-3d-layout">
+                    <HeroExperience />
+                    <Cards />
+                </div>
+            </figure>
         </div>
     );
 }
