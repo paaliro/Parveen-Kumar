@@ -32,11 +32,7 @@ function Hero() {
             <figure>
                 <div className="hero-3d-layout">
                     <HeroExperience />
-                    <div className="mb-5">
-                        <Cards />
-                    </div>
-                    <Cards />
-
+                    <Cards className="mb-5" />
                 </div>
             </figure>
         </div>
