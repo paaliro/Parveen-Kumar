@@ -29,15 +29,33 @@ export const cardsContent = [
 ];
 
 export const logoIconsList = [
-  { imgPath: "/images/logos/company-logo-1.png" },
-  { imgPath: "/images/logos/company-logo-2.png" },
-  { imgPath: "/images/logos/company-logo-3.png" },
-  { imgPath: "/images/logos/company-logo-4.png" },
-  { imgPath: "/images/logos/company-logo-5.png" },
-  { imgPath: "/images/logos/company-logo-6.png" },
-  { imgPath: "/images/logos/company-logo-7.png" },
-  { imgPath: "/images/logos/company-logo-8.png" },
-  { imgPath: "/images/logos/company-logo-9.png" },
-  { imgPath: "/images/logos/company-logo-10.png" },
-  { imgPath: "/images/logos/company-logo-11.png" },
+  { imgPath: "/images/sections/logos/company-logo-1.png" },
+  { imgPath: "/images/sections/logos/company-logo-2.png" },
+  { imgPath: "/images/sections/logos/company-logo-3.png" },
+  { imgPath: "/images/sections/logos/company-logo-4.png" },
+  { imgPath: "/images/sections/logos/company-logo-5.png" },
+  { imgPath: "/images/sections/logos/company-logo-6.png" },
+  { imgPath: "/images/sections/logos/company-logo-7.png" },
+  { imgPath: "/images/sections/logos/company-logo-8.png" },
+  { imgPath: "/images/sections/logos/company-logo-9.png" },
+  { imgPath: "/images/sections/logos/company-logo-10.png" },
+  { imgPath: "/images/sections/logos/company-logo-11.png" },
+];
+
+export const featureContent = [
+  {
+    iconPath: "/images/sections/featureCard/icon-1.png",
+    heading: "Quality Focus",
+    text: "Delivering high-quality results while maintaining attention to every detail.",
+  },
+  {
+    iconPath: "/images/sections/featureCard/icon-2.png",
+    heading: "Reliable Communication",
+    text: "Keeping you updated at every step to ensure transparency and clarity.",
+  },
+  {
+    iconPath: "/images/sections/featureCard/icon-3.png",
+    heading: "On-Time Delivery",
+    text: "Making sure projects are completed on schedule, with quality & attention to detail.",
+  },
 ];

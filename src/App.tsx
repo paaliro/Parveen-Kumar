@@ -1,4 +1,5 @@
 import Cards from "./components/Extra/Cards"
+import FeatureCards from "./components/sections/FeatureCards"
 import Hero from "./components/sections/Hero"
 import Logos from "./components/sections/Logos"
 // import NavBar from "./components/sections/NavBar"
@@ -12,6 +13,7 @@ function App() {
             <Cards />
             <ShowCase />
             <Logos />
+            <FeatureCards />
         </div>
     )
 }
