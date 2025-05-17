@@ -7,7 +7,7 @@ export const words = [
 
 export const cardsContent = [
     {
-        value: 10,
+        value: 15,
         symbol: '+',
         label: 'Years of Experience',
     },
@@ -17,13 +17,13 @@ export const cardsContent = [
         label: 'Completed Projects',
     },
     {
-        value: 20,
+        value: 108,
         symbol: '+',
         label: 'Completed Projects',
     },
     {
-        value: 5,
-        symbol: '+',
+        value: 90,
+        symbol: '%',
         label: 'Client Retention Rate',
     },
 ];
