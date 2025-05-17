@@ -11,7 +11,7 @@ function Hero() {
                     <img src="/images/bg.png" alt="background" />
                 </div>
                 {/* Left : Hero Content */}
-                <header className="flex flex-col justify-center w-screen pl-10">
+                <header className="flex flex-col justify-center w-screen pl-5 sm:pl-10">
                     <div className="flex flex-col hero-text text-2xl sm:text-5xl font-semibold text-start mt-20 sm:mt-65 w-fit">
                         <div className='flex items-center'>
                             <MotionH1>Shapping</MotionH1>
@@ -22,7 +22,7 @@ function Hero() {
                         <p className="text-white-50 text-sm sm:text-lg mt-5 mx-2 font-normal z-50">
                             Hi, I'm <b>Parveen</b>, a developer based in India with a passion for code.
                         </p>
-                        <Button />
+                        <Button className="pl-2 sm:pl-0" />
                     </div>
                 </header>
             </section>
