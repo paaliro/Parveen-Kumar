@@ -1,6 +1,5 @@
 import AnimationWords from "../AnimationWords";
 import Button from "../Button";
-import Cards from "../Cards";
 import HeroExperience from "../HeroModels/HeroExperience";
 import MotionH1 from './MotionH1';
 
@@ -12,14 +11,14 @@ function Hero() {
                     <img src="/images/bg.png" alt="background" />
                 </div>
                 {/* Left : Hero Content */}
-                <header className="flex flex-col justify-center w-screen">
-                    <div className="flex flex-col hero-text text-2xl sm:text-5xl ml-7 font-semibold text-start sm:ml-25 mt-20 sm:mt-65 w-fit">
+                <header className="flex flex-col justify-center w-screen pl-10">
+                    <div className="flex flex-col hero-text text-2xl sm:text-5xl font-semibold text-start mt-20 sm:mt-65 w-fit">
                         <div className='flex items-center'>
                             <MotionH1>Shapping</MotionH1>
                             <MotionH1><AnimationWords /></MotionH1>
                         </div>
-                        <MotionH1 delay={0.2}>into Real Projects</MotionH1>
-                        <MotionH1 delay={0.4}>that Deliver Results</MotionH1>
+                        <MotionH1 delay={0.3}>into Real Projects</MotionH1>
+                        <MotionH1 delay={0.6}>that Deliver Results</MotionH1>
                         <p className="text-white-50 text-sm sm:text-lg mt-5 mx-2 font-normal z-50">
                             Hi, I'm <b>Parveen</b>, a developer based in India with a passion for code.
                         </p>
@@ -32,7 +31,6 @@ function Hero() {
             <figure>
                 <div className="hero-3d-layout">
                     <HeroExperience />
-                    <Cards className="mb-5" />
                 </div>
             </figure>
         </div>

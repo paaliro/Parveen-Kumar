@@ -1,15 +1,24 @@
+import { cardsContent } from "../assets/helper";
+
+
 const Cards = ({ className }: { className?: string }) => {
     return (
-        <div className={`${className} w-100 ml-7 sm:ml-0 bg-zinc-900 rounded-2xl py-6`}>
-            <div className="ml-7">
-                <div className="flex gap-1 w-50% text-2xl font-bold">
-                    <p>0</p>
-                    <p>+</p>
+        <div className={`${className} grid w-[90%] sm:w-[97%] gap-2 mx-5 sm:flex mt-90 sm:mt-5 mb-20`}>
+            {cardsContent.map((data, index) => (
+                <div key={index} className="flex-1 bg-zinc-800 rounded-2xl px-4 py-7">
+                    <div className="flex gap-1 text-3xl font-bold">
+                        <p>{data.value}</p>
+                        <p>{data.symbol}</p>
+                    </div>
+                    <p>{data.label}</p>
                 </div>
-                <p>Years fo Experience</p>
-            </div>
+            ))}
         </div>
+
     )
 }
 
 export default Cards;
+
+
+
