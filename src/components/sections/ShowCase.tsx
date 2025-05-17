@@ -6,6 +6,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+// Animation when card appear
 const ShowCase = () => {
     const sectionRef = useRef(null);
     const image1Ref = useRef(null);
@@ -51,7 +53,7 @@ const ShowCase = () => {
     }, [])
 
     return (
-        <section ref={sectionRef} className="sm:flex justify-center gap-10 mx-7 mt-8 vw-100 bg-[#141416] rounded-2xl">
+        <section ref={sectionRef} className="sm:flex justify-center gap-10 mx-8 mt-8 vw-100 bg-[#141416] rounded-2xl">
             <div ref={image1Ref} className="sm:flex flex-col justify-center mb-4 sm:mb-0 sm:w-7/12">
                 <ImageTag src="/images/sections/showCase/img-1.png" alt="showCase-img-1" className="flex justify-center" />
                 <div className="px-2 sm:ml-7 mt-1 leading-7 sm:leading-normal">
