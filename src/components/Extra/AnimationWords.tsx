@@ -1,4 +1,4 @@
-import { words } from "../assets/helper";
+import { words } from "../../assets/helper";
 
 const AnimationWords = () => {
     return (

@@ -1,7 +1,7 @@
-import AnimationWords from "../AnimationWords";
-import Button from "../Button";
+import AnimationWords from "../Extra/AnimationWords";
+import Button from "../Extra/Button";
 import HeroExperience from "../HeroModels/HeroExperience";
-import MotionH1 from './MotionH1';
+import MotionH1 from '../Extra/MotionH1';
 
 function Hero() {
     return (
