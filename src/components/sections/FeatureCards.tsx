@@ -1,9 +1,11 @@
-import { featureContent } from "../../assets/helper";
+// import { featureContent } from "../../assets/helper";
 
-const FeatureCards = () => {
+import { FeatureItem } from "../../assets/types";
+
+const FeatureCards = ({ structure }: { structure?: FeatureItem[] }) => {
     return (
         <section className="flex flex-wrap justify-center gap-4 px-4">
-            {featureContent.map((data, index) => (
+            {structure?.map((data, index) => (
                 <div
                     key={index}
                     className="sm:w-5/16 w-full flex flex-col gap-3 bg-[#141416] rounded-lg py-5 px-7 sm:px-8">

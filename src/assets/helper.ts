@@ -59,3 +59,21 @@ export const featureContent = [
     text: "Making sure projects are completed on schedule, with quality & attention to detail.",
   },
 ];
+
+export const workContent = [
+  {
+    iconPath: "",
+    heading: "",
+    text: "",
+  },
+  {
+    iconPath: "",
+    heading: "",
+    text: "",
+  },
+  {
+    iconPath: "",
+    heading: "",
+    text: "",
+  },
+];
