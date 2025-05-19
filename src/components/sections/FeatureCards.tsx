@@ -8,7 +8,7 @@ const FeatureCards = ({ structure }: { structure?: FeatureItem[] }) => {
             {structure?.map((data, index) => (
                 <div
                     key={index}
-                    className="sm:w-5/16 w-full flex flex-col gap-3 bg-[#141416] rounded-lg py-5 px-7 sm:px-8">
+                    className="sm:w-5/16 w-full flex flex-col gap-3 bg-[#141416] rounded-lg py-5 px-7 sm:px-8 ">
                     <img src={data.iconPath} alt="icon" width={50} height={50} />
                     <div className="flex flex-col gap-1">
                         <h1 className="font-semibold text-xl text-white">{data.heading}</h1>
