@@ -62,18 +62,23 @@ export const featureContent = [
 
 export const workContent = [
   {
-    iconPath: "",
-    heading: "",
-    text: "",
+    starPath: "/images/sections/workExperience/star.svg",
+    text: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    imagePath: "/images/sections/workExperience/hostinger.png",
   },
   {
-    iconPath: "",
-    heading: "",
+    starPath: "/images/sections/workExperience/star.svg",
     text: "",
+    imagePath: "",
   },
   {
-    iconPath: "",
-    heading: "",
+    starPath: "/images/sections/workExperience/star.svg",
     text: "",
+    imagePath: "",
+  },
+  {
+    starPath: "/images/sections/workExperience/star.svg",
+    text: "",
+    imagePath: "",
   },
 ];
