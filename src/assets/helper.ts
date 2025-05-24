@@ -68,17 +68,12 @@ export const workContent = [
   },
   {
     starPath: "/images/sections/workExperience/star.svg",
-    text: "",
-    imagePath: "",
+    text: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    imagePath: "/images/sections/workExperience/appwrite.png",
   },
   {
     starPath: "/images/sections/workExperience/star.svg",
-    text: "",
-    imagePath: "",
-  },
-  {
-    starPath: "/images/sections/workExperience/star.svg",
-    text: "",
-    imagePath: "",
-  },
+    text: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    imagePath: "/images/sections/workExperience/docker.png",
+  }
 ];
