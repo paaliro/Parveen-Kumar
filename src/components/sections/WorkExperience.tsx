@@ -42,7 +42,7 @@ const WorkExperience = () => {
                             <ul className="list-disc pl-8">
                                 <li>Developed and maintained user-facing features for the Hostinger website.</li>
                                 <li>Collaborated closely with UI/UX designers to ensure seamless user experiences.</li>
-                                <li>Optimized web applications for maximum speed and scalability.</li>
+                                <li>Optimized web  applications for maximum speed and scalability.</li>
                             </ul>
                         </div>
                     </div>
