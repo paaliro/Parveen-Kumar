@@ -88,6 +88,7 @@ export const workContent2 = [
       "Optimized web applications for maximum speed and scalability.",
     ],
   },
+
   {
     header: "Full Stack Developer",
     date: "June 2020 - December 2023",
@@ -97,6 +98,7 @@ export const workContent2 = [
       "Contributed to open-source projects that were used with Docker ecosystem.",
     ],
   },
+  
   {
     header: "React Native Developer",
     date: "March 2019 - May 2020",
