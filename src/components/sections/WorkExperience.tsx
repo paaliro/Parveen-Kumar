@@ -1,4 +1,4 @@
-import { workContent } from "../../assets/helper";
+import { workContent, workContent2 } from "../../assets/helper";
 import ImageTag from "../Extra/ImageTag";
 import Tag from "../Extra/Tag";
 
@@ -7,12 +7,11 @@ const WorkExperience = () => {
         <section className="bg-[#202123] mx-4 sm:mx-9 rounded-xl mt-10 pt-3">
             <Tag icon="💼" text="My Career Overview" />
             <p className="text-center text-2xl sm:text-4xl font-semibold mt-2 sm:mt-7">Professional Work Experience</p>
-
-
-            <div className="sm:flex gap-10 mx-0 sm:mx-8 container border-2 border-amber-100">
+            
+            <div className="sm:flex gap-5 mx-0 sm:mx-8 container border-2 border-amber-100">
 
                 {/* Left Section */}
-                <div className="border-2 border-amber-600 w-full sm:w-[40%]">
+                <div className="border-2 border-amber-600 w-full sm:w-[60%]">
                     {workContent.map((element, index) => (
                         <div key={index} className="mt-8 sm:mt-16 mb-4 flex flex-col gap-2.5 bg-[#141416] rounded-xl mx-4">
                             <div className="flex my-6 mx-7">
@@ -27,27 +26,28 @@ const WorkExperience = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="border-2 border-blue-100 mt-8 sm:mt-16 mb-4 mx-4 w-full sm:w-[60%]">
-
-                    <div className="container flex flex-col gap-6">
-                        <div className="flex flex-col gap-2">
-                            <h1 className="font-semibold text-2xl sm:text-3xl">Frontend Developer</h1>
-                            <div className="flex gap-2 items-center">
-                                <ImageTag src="/images/sections/workExperience/calendar.png" alt="" height="19" width="19" />
-                                <p className="font-light text-[#daecff] text-sm">January 2023 - Present</p>
+                <div className="flex sm:flex-none flex-col gap-6">
+                    {workContent2.map((data, index) => (
+                        <div key={index} className="pl-5 sm:pl-6 px-5 mx-6 sm:mt-16 sm:w-65% h-fit py-5 rounded-xl bg-[#141416] border-2 border-blue-50">
+                            <div className="flex flex-col gap-2 sm:my-2">
+                                <h1 className="font-semibold text-2xl sm:text-3xl">{data.header}</h1>
+                                <div className="flex gap-2 items-center">
+                                    <ImageTag src="/images/sections/workExperience/calendar.png" alt="" height="19" width="19" />
+                                    <p className="font-light text-[#daecff] text-sm">{data.date}</p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col gap-3 mt-4 sm:mt-0">
+                                <p className="font-light text-[#daecff] text-sm italic">Responsibilities</p>
+                                <ul className="list-disc pl-8 flex flex-col gap-3">
+                                    <li>{data.list[0]}</li>
+                                    <li>{data.list[1]}</li>
+                                    <li>{data.list[2]}</li>
+                                </ul>
                             </div>
                         </div>
-                        <div>
-                            <p className="font-light text-[#daecff] text-sm italic">Responsibilities</p>
-                            <ul className="list-disc pl-8">
-                                <li>Developed and maintained user-facing features for the Hostinger website.</li>
-                                <li>Collaborated closely with UI/UX designers to ensure seamless user experiences.</li>
-                                <li>Optimized web  applications for maximum speed and scalability.</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                    ))}
                 </div>
+
             </div>
 
 
