@@ -47,14 +47,13 @@ const WorkExperience = () => {
                         </div>
                     ))}
                 </div>
-
             </div>
 
 
 
 
 
-            <p>hll</p>
+
         </section>
     )
 }
