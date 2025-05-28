@@ -36,7 +36,7 @@ const WorkExperience = () => {
                                     <p className="font-light text-[#daecff] text-sm">{data.date}</p>
                                 </div>
                             </div>
-                            <div className="flex flex-col gap-3 mt-4 sm:mt-0">
+                            <div className="flex flex-col gap-3 mt-4 sm:mt-0 w-90vw">
                                 <p className="font-light text-[#daecff] text-sm italic">Responsibilities</p>
                                 <ul className="list-disc pl-8 flex flex-col gap-3">
                                     <li>{data.list[0]}</li>
