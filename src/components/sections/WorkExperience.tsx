@@ -26,9 +26,9 @@ const WorkExperience = () => {
                 </div>
 
                 {/* Right Section */}
-                <div className="flex sm:flex-none flex-col gap-7 sm:gap-13">
+                <div className="flex sm:flex-none flex-col gap-7 sm:gap-13 w-90vw">
                     {workContent2.map((data, index) => (
-                        <div key={index} className={`pl-5 sm:pl-6 px-5 mx-5 sm:w-65% h-fit py-5 rounded-xl bg-[#141416] ${index === 0 ? 'sm:mt-16' : index === 1 ? 'sm:mt-10' : 'sm:mt-11'}`}>
+                        <div key={index} className={`pl-5 sm:pl-6 px-5 mx-5 sm:w-65% h-fit py-5 rounded-xl bg-[#141416] ${index === 0 ? 'sm:mt-16' : index === 1 ? 'sm:mt-4' : 'sm:mt-4'} ${ index === 0 ? 'sm:h-67' : index === 1 ? 'sm:h-70' : 'sm:h-70'}`}>
                             <div className="flex flex-col gap-2 sm:my-2">
                                 <h1 className="font-semibold text-2xl sm:text-3xl">{data.header}</h1>
                                 <div className="flex gap-2 items-center">
