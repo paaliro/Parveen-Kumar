@@ -9,7 +9,6 @@ const WorkExperience = () => {
             <p className="text-center text-2xl sm:text-4xl font-semibold mt-2 sm:mt-7">Professional Work Experience</p>
 
             <div className="sm:flex mx-0 sm:mx-8 container">
-
                 {/* Left Section */}
                 <div className="w-full sm:w-[60%]">
                     {workContent.map((element, index) => (
