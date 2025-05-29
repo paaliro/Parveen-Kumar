@@ -1,6 +1,5 @@
-// import { workContent, workContent2 } from "../../assets/helper";
-import CareerOverview from "../Extra/CareerOverview";
-// import ImageTag from "../Extra/ImageTag";
+import { workContent, workContent2 } from "../../assets/helper";
+import ImageTag from "../Extra/ImageTag";
 import Tag from "../Extra/Tag";
 
 const WorkExperience = () => {
@@ -9,8 +8,8 @@ const WorkExperience = () => {
             <Tag icon="💼" text="My Career Overview" />
             <p className="text-center text-2xl sm:text-4xl font-semibold mt-2 sm:mt-7">Professional Work Experience</p>
 
-            {/* <div className="sm:flex mx-0 sm:mx-8 container">
-                Left Section
+            <div className="sm:flex mx-0 sm:mx-8 container">
+                {/* Left Section */}
                 <div className="w-full sm:w-[60%]">
                     {workContent.map((element, index) => (
                         <div key={index} className="mt-8 sm:mt-16 mb-4 flex flex-col gap-2.5 bg-[#141416] rounded-xl mx-4">
@@ -25,7 +24,7 @@ const WorkExperience = () => {
                     ))}
                 </div>
 
-                Right Section
+                {/* Right Section */}
                 <div className="flex sm:flex-none flex-col gap-7 sm:gap-13 w-90vw">
                     {workContent2.map((data, index) => (
                         <div key={index} className={`pl-5 sm:pl-6 px-5 mx-5 sm:w-65% h-fit py-5 rounded-xl bg-[#141416] ${index === 0 ? 'sm:mt-16' : index === 1 ? 'sm:mt-4' : 'sm:mt-4'} ${index === 0 ? 'sm:h-67' : index === 1 ? 'sm:h-70' : 'sm:h-70'}`}>
@@ -47,10 +46,10 @@ const WorkExperience = () => {
                         </div>
                     ))}
                 </div>
-            </div> */}
+            </div>
 
 
-            <CareerOverview />
+            {/* <CareerOverview /> */}
 
 
 
