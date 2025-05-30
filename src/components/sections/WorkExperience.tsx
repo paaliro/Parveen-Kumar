@@ -1,5 +1,6 @@
 import CareerOverview from "../Extra/CareerOverview";
 import Tag from "../Extra/Tag";
+import WhatIBring from "../Extra/WhatIBring";
 
 const WorkExperience = () => {
     return (
@@ -7,6 +8,7 @@ const WorkExperience = () => {
             <Tag icon="💼" text="My Career Overview" />
             <p className="text-center text-2xl sm:text-4xl font-semibold mt-2 sm:mt-7">Professional Work Experience</p>
             <CareerOverview />
+            <WhatIBring />
 
 
 
