@@ -16,6 +16,6 @@ const WorkExperience = () => {
 
         </section>
     )
-}
+} 
 
 export default WorkExperience;
