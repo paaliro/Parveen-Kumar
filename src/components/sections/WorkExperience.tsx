@@ -11,9 +11,6 @@ const WorkExperience = () => {
             <CareerOverview /> 
             {/* <WhatIBring /> */}
             <CustomerFeedback />
-
-
-
         </section>
     )
 } 
