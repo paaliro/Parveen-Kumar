@@ -19,9 +19,18 @@ const CareerOverview = () => {
                 ))}
             </div>
 
+
+            <div className="w-full sm:w-[60%]">
+                <div className="mt-8 sm:mt-16 mb-4 flex flex-col gap-2.5 bg-[#141416] rounded-xl mx-4">
+                    <ImageTag src="" alt="" width="22" height="20" />
+                    <p className="mx-7 w-[90%] text-lg">Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.</p>
+                    <ImageTag src=" " alt="" className="pl-6 mb-4 mt-4"/>
+                </div>
+            </div>
+
             {/* Right Section */}
             <div className="flex sm:flex-none flex-col gap-7 sm:gap-13 w-90vw">
-                {workContent2.map((data, index) => ( 
+                {workContent2.map((data, index) => (
                     <div key={index} className={`pl-5 sm:pl-6 px-5 mx-5 sm:w-65% h-fit py-5 rounded-xl bg-[#141416] ${index === 0 ? 'sm:mt-16' : index === 1 ? 'sm:mt-4' : 'sm:mt-4'} ${index === 0 ? 'sm:h-67' : index === 1 ? 'sm:h-70' : 'sm:h-70'}`}>
                         <div className="flex flex-col gap-2 sm:my-2">
                             <h1 className="font-semibold text-2xl sm:text-3xl">{data.header}</h1>
