@@ -6,7 +6,7 @@ const CareerOverview = () => {
         <div className="sm:flex mx-0 sm:mx-8 container">
             {/* Left Section */}
             <div className="w-full sm:w-[60%]">
-                {workContent.map((element, index) => (
+                {workContent.map((element, index) => ( 
                     <div key={index} className="mt-8 sm:mt-16 mb-4 flex flex-col gap-2.5 bg-[#141416] rounded-xl mx-4">
                         <div className="flex my-6 mx-7">
                             {Array.from({ length: 5 }).map((_, index) => (
