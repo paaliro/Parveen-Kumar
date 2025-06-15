@@ -24,7 +24,7 @@ const CareerOverview = () => {
                 <div className="mt-8 sm:mt-16 mb-4 flex flex-col gap-2.5 bg-[#141416] rounded-xl mx-4">
                     <ImageTag src="" alt="" width="22" height="20" />
                     <p className="mx-7 w-[90%] text-lg">Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.</p>
-                    <ImageTag src=" " alt="" className="pl-6 mb-4 mt-4"/>
+                    <ImageTag src="" alt="" className="pl-6 mb-4 mt-4"/>
                 </div>
             </div>
 
