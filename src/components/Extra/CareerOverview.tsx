@@ -16,7 +16,7 @@ const CareerOverview = () => {
                         <p className="mx-7 w-[90%] text-lg">{element.text}</p>
                         <ImageTag src={element.imagePath} alt="company logo" className="pl-6 mb-4 mt-4" />
                     </div>
-                ))}
+                ))} 
             </div>
 
 
