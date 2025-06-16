@@ -3,34 +3,57 @@ import ImageTag from "./ImageTag";
 import Tag from "./Tag";
 
 const CustomerFeedback = () => {
-    return (
-        <section className=" w-95vw mt-15">
-            <Tag icon="⭐" text="Customer feedback highlights" />
-            <h1 className="text-center font-semibold text-2xl sm:text-4xl w-90vw mb-10">What People Say About Me?</h1>
+    // Chunk array into groups of 2 for each column
+    const chunkedTalk = Array.from({ length: 3 }, (_, i) =>
+        peopleTalk.slice(i * 2, (i + 1) * 2)
+    );
 
-            <div className="sm:grid grid-cols-3 items-baseline sm:mx-14 h-fit border-1 border-amber-50 pb-3">
-                {peopleTalk.map((data, index) => (
-                    <div key={index} className="sm:w-[95%] sm:h-fit bg-[#141416] mx-6 sm:mx-auto mt-4 rounded-lg pb-1 sm:pb-0 pt-1 sm:pt-0 border-1 border-amber-200">
-                        <div className="flex my-5 mx-5">
-                            {Array.from({ length: 5 }).map((_, index) => (
-                                <ImageTag key={index} src={data.starPath} alt="star" width="22" height="20" />
-                            ))}
-                        </div>
-                        <p className="mx-5 text-balance text-[#D9ECFF]">
-                            {data.text} 
-                        </p> 
-                        <div className="mt-6 flex gap-3 mx-5 my-5 items-center">
-                            <ImageTag alt="person-1" src={data.profile} width="38" height="38" />
-                            <div>
-                                <p className="font-semibold">{data.name}</p>
-                                <p className="font-light text-xs text-[#D9ECFF]">{data.userName}</p>
+    return (
+        <section className="max-w-7xl mx-auto mt-10 px-4">
+            <Tag icon="⭐" text="Customer feedback" />
+            <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-6">
+                What People Say?
+            </h1>
+
+            <div className="grid sm:grid-cols-3 gap-6">
+                {chunkedTalk.map((chunk, colIndex) => (
+                    <div key={colIndex} className="flex flex-col gap-6">
+                        {chunk.map((data, index) => (
+                            <div
+                                key={`${colIndex}-${index}`}
+                                className="bg-[#141416] rounded-lg p-4 border border-amber-200 min-h-fit"
+                            >
+                                <div className="flex gap-1 mb-4">
+                                    {Array.from({ length: 5 }).map((_, starIndex) => (
+                                        <ImageTag
+                                            key={starIndex}
+                                            src={data.starPath}
+                                            alt="star"
+                                            width="20"
+                                            height="20"
+                                        />
+                                    ))}
+                                </div>
+                                <p className="text-[#D9ECFF] mb-4 text-balance">{data.text}</p>
+                                <div className="flex items-center gap-3">
+                                    <ImageTag
+                                        alt={data.name}
+                                        src={data.profile}
+                                        width="36"
+                                        height="36"
+                                    />
+                                    <div>
+                                        <p className="font-semibold text-white">{data.name}</p>
+                                        <p className="text-xs text-[#D9ECFF]">{data.userName}</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 ))}
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default CustomerFeedback;
