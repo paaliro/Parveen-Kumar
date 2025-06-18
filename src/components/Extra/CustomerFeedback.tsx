@@ -36,7 +36,7 @@ const CustomerFeedback = () => {
                                 </div>
                                 <p className="text-[#D9ECFF] mb-4 text-balance">{data.text}</p>
                                 <div className="flex items-center gap-3">
-                                    <ImageTag
+                                    <ImageTag 
                                         alt={data.name}
                                         src={data.profile}
                                         width="36"
