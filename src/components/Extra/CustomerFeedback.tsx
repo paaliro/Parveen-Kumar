@@ -30,7 +30,7 @@ const CustomerFeedback = () => {
                                             src={data.starPath}
                                             alt="star"
                                             width="20"
-                                            height="20"
+                                            height="20" 
                                         />
                                     ))}
                                 </div>
