@@ -18,7 +18,7 @@ const CustomerFeedback = () => {
             <div className="grid sm:grid-cols-3 gap-6">
                 {chunkedTalk.map((chunk, colIndex) => (
                     <div key={colIndex} className="flex flex-col gap-6">
-                        {chunk.map((data, index) => (
+                        {chunk.map((data, index) => ( 
                             <div
                                 key={`${colIndex}-${index}`}
                                 className="bg-[#141416] rounded-lg p-4 border border-amber-200 min-h-fit"
