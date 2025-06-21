@@ -14,7 +14,7 @@ const CustomerFeedback = () => {
             <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-6">
                 What People Say? 
             </h1>
-
+ 
             <div className="grid sm:grid-cols-3 gap-6">
                 {chunkedTalk.map((chunk, colIndex) => (
                     <div key={colIndex} className="flex flex-col gap-6">
