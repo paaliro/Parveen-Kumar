@@ -12,7 +12,7 @@ const CustomerFeedback = () => {
         <section className="max-w-7xl mx-auto mt-10 px-4">
             <Tag icon="⭐" text="Customer feedback" className="mb-6" />
             <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-6">
-                What People Say?
+                What People Say? 
             </h1>
 
             <div className="grid sm:grid-cols-3 gap-6">
