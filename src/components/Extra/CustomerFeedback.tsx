@@ -33,7 +33,7 @@ const CustomerFeedback = () => {
                                     <div>
                                         <p className="font-semibold text-white">{data.name}</p>
                                         <p className="text-xs text-[#D9ECFF]">{data.userName}</p>
-                                    </div>
+                                    </div> 
                                 </div>
                             </div>
                         ))}
