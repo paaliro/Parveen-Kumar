@@ -20,7 +20,7 @@ const CustomerFeedback = () => {
                     <div key={colIndex} className="flex flex-col gap-6">
                         {chunk.map((data, index) => (
                             <div
-                                key={`${colIndex}-${index}`} 
+                                key={`${colIndex}-${index}`}   
                                 className="bg-[#141416] rounded-lg p-4 border border-amber-200 min-h-fit">
                                 <div className="flex gap-1 mb-4">
                                     {Array.from({ length: 5 }).map((_, starIndex) => (
