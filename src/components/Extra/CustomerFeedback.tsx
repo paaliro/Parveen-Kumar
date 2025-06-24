@@ -22,7 +22,7 @@ const CustomerFeedback = () => {
                             <div
                                 key={`${colIndex}-${index}`}   
                                 className="bg-[#141416] rounded-lg p-4 border border-amber-200 min-h-fit">
-                                <div className="flex gap-1 mb-4">
+                                <div className="flex gap-1 mb-4"> 
                                     {Array.from({ length: 5 }).map((_, starIndex) => (
                                         <ImageTag key={starIndex} src={data.starPath} alt="star" width="20" height="20" />
                                     ))}
