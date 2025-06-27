@@ -26,7 +26,7 @@ const CustomerFeedback = () => {
                                     {Array.from({ length: 5 }).map((_, starIndex) => (
                                         <ImageTag key={starIndex} src={data.starPath} alt="star" width="20" height="20" />
                                     ))}
-                                </div>
+                                </div> 
                                 <p className="text-[#D9ECFF] mb-4 text-balance">{data.text}</p>
                                 <div className="flex items-center gap-3">
                                     <ImageTag alt={data.name} src={data.profile} width="36" height="36" />
