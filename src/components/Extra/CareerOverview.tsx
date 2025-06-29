@@ -68,12 +68,12 @@ const CareerOverview: React.FC = () => {
   const boxes = Object.values(workContent);
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 flex flex-col space-y-10 border-2 border-amber-50">
+    <div className="container mx-auto px-4 sm:px-8 flex flex-col space-y-10">
       {boxes.map((box, index) => (
         <div
           key={index}
-          className="flex flex-col sm:flex-row  rounded-xl p-6 gap-6 sm:gap-10 border-1 border-blue-100"
-        >
+          className="flex flex-col sm:flex-row rounded-xl p-6 gap-6 sm:gap-10 border-1 border-blue-100">
+            
           {/* Left Section */}
           <div className="w-full sm:w-1/2 bg-[#141416] flex flex-col gap-3 pr-0 sm:pr-8 sm:border-r sm:border-red-100 border-1 border-red-100 sm:p-10">
             <div className="flex my-4">
