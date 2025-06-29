@@ -83,7 +83,7 @@ const CareerOverview: React.FC = () => {
                   src={box.left.starPath}
                   alt="star"
                   width="22"
-                  height="20"
+                  height="22"
                 />
               ))}
             </div>
