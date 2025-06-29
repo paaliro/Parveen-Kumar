@@ -51,7 +51,7 @@ const CareerOverview: React.FC = () => {
               {box.right.list.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}
-            </ul>
+            </ul>  
           </div>
         </div>
       ))}
