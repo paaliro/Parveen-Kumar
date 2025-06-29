@@ -68,14 +68,14 @@ const CareerOverview: React.FC = () => {
   const boxes = Object.values(workContent);
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 flex flex-col space-y-10">
+    <div className="container mx-auto px-4 sm:px-8 flex flex-col space-y-2">
       {boxes.map((box, index) => (
         <div
           key={index}
-          className="flex flex-col sm:flex-row rounded-xl p-6 gap-6 sm:gap-10 border-1 border-blue-100">
-            
+          className="flex flex-col sm:flex-row rounded-xl p-6 gap-6 sm:gap-10">
+
           {/* Left Section */}
-          <div className="w-full sm:w-1/2 bg-[#141416] flex flex-col gap-3 pr-0 sm:pr-8 sm:border-r sm:border-red-100 border-1 border-red-100 sm:p-10">
+          <div className="w-full sm:w-1/2 bg-[#141416] flex flex-col gap-3 sm:gap-8 p-5 sm:p-0 sm:pt-8 sm:pl-8 rounded-lg">
             <div className="flex my-4">
               {Array.from({ length: 5 }).map((_, i) => (
                 <ImageTag
@@ -96,7 +96,7 @@ const CareerOverview: React.FC = () => {
           </div>
 
           {/* Right Section */}
-          <div className="w-full bg-[#141416] sm:w-1/2 flex flex-col gap-3 pt-6 sm:pt-0 sm:pl-8">
+          <div className="w-full sm:w-1/2 bg-[#141416] flex flex-col gap-3 pt-6 sm:pt-10 pl-6 sm:pl-12 p-5 sm:p-10 rounded-lg">
             <h1 className="font-semibold text-2xl sm:text-3xl text-white">
               {box.right.header}
             </h1>
