@@ -21,8 +21,8 @@ const CustomerFeedback = () => {
                         {chunk.map((data, index) => (
                             <div
                                 key={`${colIndex}-${index}`}    
-                                className="bg-[#141416] rounded-lg p-4 sm:p-8 min-h-fit">
-                                <div className="flex gap-1 mb-4">  
+                                className="bg-[#141416] rounded-lg p-6 sm:p-8 min-h-fit">
+                                <div className="flex gap-0.5 mb-4">  
                                     {Array.from({ length: 5 }).map((_, starIndex) => (
                                         <ImageTag key={starIndex} src={data.starPath} alt="star" width="20" height="20" />
                                     ))}
