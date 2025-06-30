@@ -11,7 +11,7 @@ const CustomerFeedback = () => {
     return (
         <section className="max-w-7xl mx-auto mt-10 px-4">
             <Tag icon="⭐" text="Customer feedback" className="mb-6" />
-            <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-6">
+            <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-10 sm:mb-14">
                 What People Say? 
             </h1>
  
@@ -21,7 +21,7 @@ const CustomerFeedback = () => {
                         {chunk.map((data, index) => (
                             <div
                                 key={`${colIndex}-${index}`}    
-                                className="bg-[#141416] rounded-lg p-4 border border-amber-200 min-h-fit">
+                                className="bg-[#141416] rounded-lg p-4 sm:p-8 min-h-fit">
                                 <div className="flex gap-1 mb-4">  
                                     {Array.from({ length: 5 }).map((_, starIndex) => (
                                         <ImageTag key={starIndex} src={data.starPath} alt="star" width="20" height="20" />
