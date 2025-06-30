@@ -9,7 +9,7 @@ const CareerOverview: React.FC = () => {
       {boxes.map((box, index) => (
         <div
           key={index}
-          className="flex flex-col sm:flex-row rounded-xl p-6 gap-6 sm:gap-10">
+          className="flex flex-col sm:flex-row rounded-xl gap-6 sm:gap-10">
 
           {/* Left Section */}
           <div className="w-full sm:w-1/2 bg-[#141416] flex flex-col gap-3 sm:gap-8 p-5 sm:p-0 sm:pt-8 sm:pl-8 rounded-lg">
