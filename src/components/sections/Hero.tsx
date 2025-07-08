@@ -22,7 +22,7 @@ function Hero() {
                         <p className="text-white-50 text-sm sm:text-lg mt-5 mx-2 font-normal z-50">
                             Hi, I'm <b>Parveen</b>, a developer based in India with a passion for code.
                         </p>
-                        <Button className="pl-2 sm:pl-0" />
+                        <Button className="pl-2 sm:pl-0"/>
                     </div>
                 </header>
             </section>
