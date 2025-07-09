@@ -5,7 +5,7 @@ import MotionH1 from '../Extra/MotionH1';
 
 function Hero() {
     return (
-        <div className="vw-100">
+        <div className="vw-100"> 
             <section id="Hero" className="relative overflow-hidden w-30%">
                 <div className="absolute top-0 left-0 z-10 w-[50%]">
                     <img src="/images/bg.png" alt="background" />
