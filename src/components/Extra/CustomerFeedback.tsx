@@ -2,7 +2,7 @@ import { peopleTalk } from "../../assets/helper";
 import ImageTag from "./ImageTag";
 import Tag from "./Tag";
 
-const   CustomerFeedback = () => {
+const   CustomerFeedback = () => { 
     // Chunk array into groups of 2 for each column
     const chunkedTalk = Array.from({ length: 3 }, (_, i) =>
         peopleTalk.slice(i * 2, (i + 1) * 2)
