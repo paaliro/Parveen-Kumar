@@ -13,18 +13,12 @@ const ShowCase = () => {
     const image1Ref = useRef(null);
     const image2Ref = useRef(null);
     const image3Ref = useRef(null);
-
-
-
     useGSAP(() => {
-
-
         const images = [
             image1Ref.current,
             image2Ref.current,
             image3Ref.current
         ]
-
         images.forEach((image, index) => {
             gsap.fromTo(
                 image,
