@@ -4,7 +4,7 @@ import { FeatureItem } from "../../assets/types";
 
 const FeatureCards = ({ structure }: { structure?: FeatureItem[] }) => {
     return (
-        <section className="flex flex-wrap justify-center gap-4 px-4">
+        <section className="flex flex-wrap justify-center gap-4 px-8">
             {structure?.map((data, index) => (
                 <div
                     key={index}
