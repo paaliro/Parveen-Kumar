@@ -6,7 +6,6 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 // Animation when card appear
 const ShowCase = () => {
     const sectionRef = useRef(null);
