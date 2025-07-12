@@ -46,15 +46,15 @@ const ShowCase = () => {
     }, [])
 
     return (
-        <section ref={sectionRef} className="sm:flex justify-center mx-8 mt-8 vw-100 bg-[#202123] rounded-2xl py-4 md:py-8">
-            <div ref={image1Ref} className="sm:flex flex-col justify-center mb-4 sm:mb-0 sm:w-7/12">
+        <section ref={sectionRef} className="sm:flex justify-center gap-0 md:gap-10 mt-8 vw-100 bg-[#202123] rounded-lg py-4 md:py-8 mx-4 md:mx-8 px-4 md:px-0 ">
+            <div ref={image1Ref} className="sm:flex flex-col justify-center mb-4 sm:mb-0 sm:w-7/12 ">
                 <ImageTag src="/images/sections/showCase/img-1.png" alt="showCase-img-1" className="flex justify-center w-full mx-auto" />
                 <div className="px-2 mt-1 leading-7 sm:leading-normal text-center">
-                    <h1 className="text-[1.33rem] md:text-3xl font-semibold">On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h1>
+                    <h1 className="text-lg md:text-3xl font-semibold">On-Demand Rides Made Simple with a Powerful, User-Friendly App called Ryde</h1>
                     <p className="text-xs md:text-base text-[#D9ECFF]">An app built with React Native, Expo, & TailwindCSS for a fast, user-friendly experience.</p>
                 </div>
             </div>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 ">
                 <div ref={image2Ref} className="mt-5">
                     <ImageTag src="/images/sections/showCase/img-2.png" alt="showCase-img-2" className="w-full mx-auto" />
                     <h1 className="font-semibold text-lg sm:text-xl mt-1 ml-2 text-center">The Library Management Platform</h1>
