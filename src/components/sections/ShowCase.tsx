@@ -46,7 +46,7 @@ const ShowCase = () => {
     }, [])
 
     return (
-        <section ref={sectionRef} className="sm:flex justify-center gap-0 md:gap-10 mt-8 vw-100 bg-[#202123] rounded-lg py-4 md:py-8 mx-4 md:mx-8 px-4 md:px-0 ">
+        <section ref={sectionRef} className="sm:flex justify-center gap-0 md:gap-10 mt-8 vw-100 bg-[#202123] rounded-lg py-4 md:py-8 mx-2 md:mx-8 px-4 md:px-0">
             <div ref={image1Ref} className="sm:flex flex-col justify-center mb-4 sm:mb-0 sm:w-7/12 ">
                 <ImageTag src="/images/sections/showCase/img-1.png" alt="showCase-img-1" className="flex justify-center w-full mx-auto" />
                 <div className="px-2 mt-1 leading-7 sm:leading-normal text-center">
