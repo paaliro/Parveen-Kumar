@@ -5,7 +5,7 @@ const CareerOverview: React.FC = () => {
   const boxes = Object.values(workContent);
 
   return (
-    <div className="container mx-auto px-4 sm:px-8 flex flex-col">
+    <div className="container mx-auto px-4 sm:px-8 flex flex-col border-1 border-red-100">
       {boxes.map((box, index) => (
         <div
           key={index}

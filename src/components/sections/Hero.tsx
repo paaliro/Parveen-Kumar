@@ -11,7 +11,7 @@ function Hero() {
                     <img src="/images/bg.png" alt="background" />
                 </div>
                 {/* Left : Hero Content */}
-                <header className="flex flex-col justify-center w-screen ml-5 sm:ml-10 sm:mx-10">
+                <header className="flex flex-col justify-center w-screen ml-5 sm:ml-10 sm:mx-100">
                     <div className="flex flex-col hero-text text-2xl sm:text-5xl font-semibold text-start mt-20 sm:mt-65 w-fit">
                         <div className='flex items-center'>
                             <MotionH1>Shapping</MotionH1>
