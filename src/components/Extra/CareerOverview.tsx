@@ -16,7 +16,7 @@ const CareerOverview: React.FC = () => {
             <div className="flex my-4">
               {Array.from({ length: 5 }).map((_, i) => (
                 <ImageTag
-                  key={i}
+                  key={i}   
                   src={box.left.starPath}
                   alt="star"
                   width="22"
