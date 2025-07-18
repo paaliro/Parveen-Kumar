@@ -5,7 +5,7 @@ import Hero from "./components/sections/Hero"
 import Logos from "./components/sections/Logos"
 import ShowCase from "./components/sections/ShowCase"
 import WorkExperience from "./components/sections/WorkExperience"
-
+ 
 function App() {
     return (
         <div className="mx-auto">
