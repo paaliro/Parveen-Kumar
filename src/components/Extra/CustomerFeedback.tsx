@@ -9,7 +9,7 @@ const   CustomerFeedback = () => {
     );
 
     return (
-        <section className="max-w-7xl mx-auto mt-10 px-4 border-1 border-amber-50 pb-6 md:pb-10">
+        <section className="max-w-7xl mx-auto mt-10 px-4 pb-6 md:pb-10">
             <Tag icon="⭐" text="Customer feedback" className="mb-6" />
             <h1 className="text-center font-semibold text-2xl sm:text-4xl mb-10 sm:mb-14">
                 What People Say? 
