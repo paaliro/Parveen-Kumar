@@ -12,7 +12,7 @@ function App() {
             {/* <NavBar className="z-100000000" /> */}
             <Hero />
             <Cards />
-            <ShowCase />
+            <ShowCase /> 
             <Logos />
             <FeatureCards structure={featureContent} />
             <WorkExperience />

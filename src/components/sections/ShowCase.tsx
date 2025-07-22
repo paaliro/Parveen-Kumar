@@ -18,7 +18,7 @@ const ShowCase = () => {
             image2Ref.current,
             image3Ref.current
         ]
-        images.forEach((image, index) => {
+        images.forEach((image, index) => { 
             gsap.fromTo(
                 image,
                 {
